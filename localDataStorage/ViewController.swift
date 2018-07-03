@@ -14,11 +14,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
+        //Storing the data
         UserDefaults.standard.set("Pato",forKey: "name")
+        let nameObj = UserDefaults.standard.object(forKey: "name")
         
-        let name = UserDefaults.standard.object(forKey: "name")
+        //Checking if name is a String and casting if obj exist
+        if let name = nameObj as? String {
+            print(name)
+        }
         
-        print(name)
     }
 
     override func didReceiveMemoryWarning() {
