@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         
         //Storing the data
-        UserDefaults.standard.set("Pato",forKey: "name")
+        //UserDefaults.standard.set("Pato",forKey: "name")
         let nameObj = UserDefaults.standard.object(forKey: "name")
         
         //Checking if name is a String and casting if obj exist
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         
         //Storing an array
         let arr = [1,2,3]
-        UserDefaults.standard.set(arr,forKey: "array")
+        //UserDefaults.standard.set(arr,forKey: "array")
         let arrObj = UserDefaults.standard.object(forKey: "array")
         
         //Checking if name is a String and casting if obj exist
