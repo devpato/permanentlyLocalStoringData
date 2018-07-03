@@ -24,6 +24,17 @@ class ViewController: UIViewController {
             print(name)
         }
         
+        //Storing an array
+        let arr = [1,2,3]
+        UserDefaults.standard.set(arr,forKey: "array")
+        let arrObj = UserDefaults.standard.object(forKey: "array")
+        
+        //Checking if name is a String and casting if obj exist
+        if let array = arrObj as? NSArray {
+            print(array)
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
